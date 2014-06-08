@@ -1,0 +1,7 @@
+name: ${project.name}
+main: jp.ucchy.test.TestPlugin
+version: ${project.version}
+depend: [MCBans]
+commands:
+  testp:
+    usage: /<command> (kick|lban) (playerName)
