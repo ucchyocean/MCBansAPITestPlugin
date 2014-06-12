@@ -41,13 +41,13 @@ public class TestPlugin extends JavaPlugin {
                 return true;
             }
 
-            String tid = target.getUniqueId().toString();
+//            String tid = target.getUniqueId().toString();
 
             String senderName = sender.getName();
-            String senderId = (sender instanceof Player) ? ((Player)sender).getUniqueId().toString() : "";
+//            String senderId = (sender instanceof Player) ? ((Player)sender).getUniqueId().toString() : "";
 
-
-            getMCBansAPI().kick(target.getName(), tid, senderName, senderId, "this is debug kick.");
+//            getMCBansAPI().kick(target.getName(), tid, senderName, senderId, "this is debug kick.");
+            getMCBansAPI().kick(target.getName(), "", senderName, "", "this is debug kick.");
             sender.sendMessage("Done!");
             return true;
 
